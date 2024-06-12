@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        .navbar{
+            display: block;
+            width: 100%; /* Ensure the header takes the full width of the container */
+            text-align: center; /* Center align the contents of the header */
+            border: 2px solid black;
+            width: 80%;
+            margin: 10PX auto;
+        }
+        .header {
+            display: block;
+            width: 100%; /* Ensure the header takes the full width of the container */
+            text-align: center; /* Center align the contents of the header */
+        }
+
+        .first {
+            border: 1px solid black;
+            width: 80%; /* Make the first div take 80% of the width */
+            margin: 0 auto; /* Center the first div horizontally */
+        }
+
+        .img-1 {
+            height: 500px;
+            width: 100%; /* Make the image take the full width of the first div */
+        }
+
+        .tdiv {
+            display: flex;
+            flex-direction: row; /* Lay out the children side by side */
+            justify-content: space-between; /* Distribute space between the items */
+            gap: 10px; /* Add space between items */
+            margin: 20px auto 0; /* Add some space between the first div and the main content, center horizontally */
+            width: 80%; /* Make sure the main element takes 80% of the width */
+            box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+        }
+
+        .second, .third, .forth,.fifth {
+            flex: 1; /* Each div takes equal space */
+            text-align: center; /* Center the text */
+            border: 1px solid black; /* Add a border for visualization */
+            padding: 10px; /* Add padding inside each div */
+            box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">services</a>
+        <a href="#">contact</a>
+       
+    </nav>
+    <section class="header">
+        <div class="first">
+            <img class="img-1" src="https://media2.thrillophilia.com/images/photos/000/379/068/original/1644575496_yhg4tfelyi3vya8vqm89ch8u5cry_img6.jpg?gravity=center&width=1280&height=642&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true" alt="">
+        </div>
+
+        <main class="tdiv">
+            <div class="second">
+                <h1>second div</h1>
+            </div>
+
+            <div class="third">
+                <h1>third div</h1>
+            </div>
+
+            <div class="forth">
+                <h1>fourth div</h1>
+            </div>
+            <div class="fifth">
+                <h1>fifth div</h1>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
