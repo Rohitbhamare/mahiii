@@ -1,81 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahii's gallery</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        .navbar{
-            display: block;
-            width: 100%; /* Ensure the header takes the full width of the container */
-            text-align: center; /* Center align the contents of the header */
-            border: 2px solid black;
-            width: 80%;
-            margin: 10PX auto;
-        }
-        .header {
-            display: block;
-            width: 100%; /* Ensure the header takes the full width of the container */
-            text-align: center; /* Center align the contents of the header */
-        }
+        
 
-        .first {
-            border: 1px solid black;
-            width: 80%; /* Make the first div take 80% of the width */
-            margin: 0 auto; /* Center the first div horizontally */
-        }
-
-        .img-1 {
-            height: 500px;
-            width: 100%; /* Make the image take the full width of the first div */
-        }
-
-        .tdiv {
-            display: flex;
-            flex-direction: row; /* Lay out the children side by side */
-            justify-content: space-between; /* Distribute space between the items */
-            gap: 10px; /* Add space between items */
-            margin: 20px auto 0; /* Add some space between the first div and the main content, center horizontally */
-            width: 80%; /* Make sure the main element takes 80% of the width */
-            box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
-        }
-
-        .second, .third, .forth,.fifth {
-            flex: 1; /* Each div takes equal space */
-            text-align: center; /* Center the text */
-            border: 1px solid black; /* Add a border for visualization */
-            padding: 10px; /* Add padding inside each div */
-            box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
-        }
+  h1 {
+    text-align: center;
+    color: coral;
+  }
+  .grid-container {
+    columns: 5 200px;
+    column-gap: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+    div {
+      width: 150px;
+      margin: 0 1.5rem 1.5rem 0;
+      display: inline-block;
+      width: 100%;
+      border: solid 2px black;
+      padding: 5px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+      &:hover img {
+        filter: grayscale(0);
+      }
+      &:hover {
+        border-color: coral;
+      }
+      img {
+        width: 100%;
+        filter: grayscale(100%);
+        border-radius: 5px;
+        transition: all .25s ease-in-out;
+      }
+      p {
+        margin: 5px 0;
+        padding: 0;
+        text-align: center;
+        font-style: italic;
+      }
+    }
+  }
     </style>
 </head>
+
 <body>
-    <nav class="navbar">
-        <a href="#">home</a>
-        <a href="#">about</a>
-        <a href="#">services</a>
-        <a href="#">contact</a>
-       
-    </nav>
-    <section class="header">
-        <div class="first">
-            <img class="img-1" src="https://media2.thrillophilia.com/images/photos/000/379/068/original/1644575496_yhg4tfelyi3vya8vqm89ch8u5cry_img6.jpg?gravity=center&width=1280&height=642&crop=fill&quality=auto&fetch_format=auto&flags=strip_profile&format=jpg&sign_url=true" alt="">
+
+    <h1>Mahii's gallery</h1>
+    <div class="grid-container">
+        <div>
+            <img class='grid-item grid-item-1' src='img/1.jpeg' alt=''>
+            <p>“Attitude on fleek. 💅🔥”</p>
         </div>
-
-        <main class="tdiv">
-            <div class="second">
-                <h1>second div</h1>
-            </div>
-
-            <div class="third">
-                <h1>third div</h1>
-            </div>
-
-            <div class="forth">
-                <h1>fourth div</h1>
-            </div>
-            <div class="fifth">
-                <h1>fifth div</h1>
-            </div>
-        </main>
-    </section>
+        <div>
+            <img class='grid-item grid-item-2' src='img/2.jpeg' alt=''>
+            <p>“Life’s a party, dress like it. 🎉👗</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-3' src='img/4.jpeg' alt=''>
+            <p>"Embrace your own kind of beauty. 💖🌟"</p>
+        </div>
+       
+        <div>
+            <img class='grid-item grid-item-4' src='img/9.jpeg' alt=''>
+            <p>“Flawless and fabulous. 💁‍♀️💄”</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-5' src='img/10.jpeg' alt=''>
+            <p>“Elegance never goes out of style. 💃🌹”</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-6' src='img/11.jpeg' alt=''>
+            <p>"C'mon friend!"</p>
+        </div>
+        <div>
+            <video class='grid-item grid-item-10' width="250" height="240" controls>
+                <source src="img/36.mp4" type="video/mp4">
+            </video>
+            <p>"“Blending in is not my style. 🎨💄”</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-7' src='img/12.jpeg' alt=''>
+            <p>“Messy bun and getting stuff done. 💁‍♀️💪”</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-8' src='img/18.jpeg' alt=''>
+            <p>“Hustle, sparkle, repeat."</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-9' src='img/19.jpeg' alt=''>
+            <p>“Stronger every day. 💪❤️"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10' src='img/20.jpeg' alt=''>
+            <p>“Chin up, princess."</p>
+        </div>
+       
+        <div>
+            <img class='grid-item grid-item-10' src='img/21.jpeg' alt=''>
+            <p>“I’m proud of who I am. 💪”</p>
+        </div>
+        
+        <div>
+            <video class='grid-item grid-item-10' width="250" height="240" controls>
+                <source src="img/35.mp4" type="video/mp4">
+            </video>
+            <p>“Wild heart, unstoppable soul. 🦁🌟”</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10' src='img/24.jpeg' alt=''>
+            <p>"Living my story, my way"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10' src='img/25.jpeg' alt=''>
+            <p>"Too glam to give a damn. "</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-8' src='img/27.jpeg' alt=''>
+            <p>Glowing from the inside out.</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-9' src='img/28.jpeg' alt=''>
+            <p>"We can't afford a cat!"</p>
+        </div>
+        <div>
+            <img class='grid-item grid-item-10' src='img/30.jpeg' alt=''>
+            <p>Be strong, be brave, be you.</p>
+        </div>
+       
+       
+        <div>
+            <video class='grid-item grid-item-10' width="250" height="240" controls>
+                <source src="img/34.mp4" type="video/mp4">
+            </video>
+            <p>Chasing butterflies and dreams. 🦋💭</p>
+        </div>
+    </div>
 </body>
+
 </html>
